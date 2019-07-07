@@ -1,0 +1,16 @@
+{
+  "name": "airecruit_backend",
+  "version": "0.0.0",
+  "description": "airecruit_backend",
+  "main": "app.js",
+  "author": {
+    "name": "prhod_000"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.262.1",
+    "express": "^4.16.3",
+    "log4js": "^2.9.0",
+    "morgan": "^1.9.0",
+    "q": "^1.5.1"
+  }
+}

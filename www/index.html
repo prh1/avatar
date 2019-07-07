@@ -1,0 +1,38 @@
+﻿<html>
+<head>
+    <script src="lib/angular.js"></script>
+    <script src="lib/three.js"></script>
+    <script src="lib/BufferSubdivisionModifier.js"></script>
+    <script src="lib/CSS3DRenderer.js"></script>
+    <script src="lib/SEA.js"></script>
+    <script src="lib/SEA3D.js"></script>
+    <script src="lib/SEA3DDeflate.js"></script>
+    <script src="lib/SEA3DLoader.js"></script>
+    <script src="lib/SEA3DLegacy.js"></script>
+    <script src="lib/SEA3DLZMA.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/playerController.js"></script>
+    <script src="js/sceneService.js"></script>
+    <script src="js/avatarService.js"></script>
+    <script src="js/scriptService.js"></script>
+    <link type="text/css" href="css/main.css" rel="stylesheet" />
+</head>
+<body ng-app="airecruit" ng-controller="playerController" style="overflow: hidden">
+    <video autoplay muted loop id="myVideo" style="position: fixed; bottom: 0; width: 100%; z-index: -100; display: none">
+        <source src="assets/video/background.vid" type="video/mp4">
+    </video>
+    <video muted id="webcam" class="video">
+    </video>
+    <div id="scene"></div>
+    <div id="overlay">
+        {{line.type}}
+        <div ng-if="line==undefined">
+            <button ng-click="startScript()">Start</button>
+        </div>
+    </div>
+    <div id="subtitles" style="font-size: 3em">
+        {{data.subtitles}}
+    </div>
+
+</body>
+</html>
